@@ -12,7 +12,7 @@
             font: normal 25pt arial;
             }/* isso e um comentario em css */
             h1{
-                color: yellowgreen;
+                color: rgb(209, 45, 4);
             }
     </style>
 </head>
@@ -20,9 +20,13 @@
 <h1>meu terceiro programa</h1>
 <p>Aprendendo JavaScript</p><!--isso é um comentario em HTML-->
 <script>
- var n1 = window.prompt('digite um número')
- var n2 = window.prompt('digite outro número')
- window.alert('a soma dos numeros é '+ n1 + n2)
+ var n1 = Number(window.prompt('digite um número'))
+ var n2 = Number(window.prompt('digite outro número'))
+ var s = n1 + n2 
+ window.alert(`a soma de ${n1} e ${n2} é igual a ${s}`)//existe diferença entre crase e aspas 
+ //+ para concatenação
+ //(number + number) = adição
+ //(string + string) = concatenação
 </script>
     
 </body>
