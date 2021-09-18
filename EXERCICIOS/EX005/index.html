@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Quinto Script</title>
+    <style>
+        body{
+            background-color: red;
+            color: honeydew;
+            font: normal 15pt arial;
+            }
+    </style>
+</head>
+<body>
+    <h1>Iniciandos os estudos no DOM</h1>
+    <p>aqui vai o resultado</p>
+    <div id="msg">clique aqui</div>
+    <p>aprendendo a usar <strong>DOM</strong> em javascript</p>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'estou aguardando'
+    </script>
+
+
+    
+</body>
+</html>
