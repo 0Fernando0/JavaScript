@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interação de objetos</title>
+    <style>
+        div#area{
+            font: normal 30pt arial;
+            background: red;
+            color: black;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>clique na imagem abaixo</h1>
+    <div id="area">
+        clique aqui...
+    </div>
+<script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click',clicar)
+    a.addEventListener('mouseenter',entrar)
+    a.addEventListener('mouseout',sair)
+    function clicar(){
+        a.innerHTML = 'CLICOU'
+        a.style.background = 'blue'
+    }
+
+    function entrar(){
+        a.innerHTML = 'ENTROU'
+        a.style.background = 'green'
+    }
+    
+    function sair(){
+        a.innerHTML = 'SAIU'
+        a.style.background = 'purple'
+    }
+
+
+</script>
+
+
+</body>
+</html>
